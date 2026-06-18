@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D&D ไทย</title>
+</head>
+<body>
+    <h1>🎲 ยินดีต้อนรับสู่ D&D ไทย 🎲</h1>
+    <p>เว็บแรกของฉัน</p>
+
+    <button onclick="roll()">ทอย D20</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function roll() {
+            let dice = Math.floor(Math.random() * 20) + 1;
+            document.getElementById("result").innerHTML =
+                "ผลการทอย: " + dice;
+        }
+    </script>
+</body>
+</html>
